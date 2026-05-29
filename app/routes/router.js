@@ -34,7 +34,7 @@ router.post("/classificar", (req, res)=>{
     let objJson = {"semana":semana};
  
     //envio dos dados para mescalr com o HTML
-    res.render("pages/index",{"retorno":objJson,"valores":{"idade":req.body.idade}})
+    res.render("index",{"retorno":objJson,"valores":{"idade":req.body.idade}})
  
 });
  
